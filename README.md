@@ -46,7 +46,7 @@ Implement deduplication logic to ensure data consistency and correctness before 
 ### Technology Stack
 
 - Apache Spark (PySpark)
-- Amazon S3 / Azure Data Lake Gen2
+- Amazon S3 / Azure Data Lake Gen2 / Databricks
 - CSV file format
 - Delta Lake / Lakehouse Architecture (optional).
 
