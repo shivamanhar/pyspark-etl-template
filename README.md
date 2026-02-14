@@ -15,27 +15,27 @@ In this project, <br/>I ensure data quality, reliability, and governance.
 
 **Project folder structure**</br>
 
-pyspark-etl-template/
-├── config
-│ └── config
-| └── sqlconfig
-├── create_table
-| └── create_table_script
-├── etl
-│ ├── bronze
-│ │ ├── bronze_dim_customer_ingestion
-│ │ ├── bronze_dim_product_ingestion
-│ │ └── bronze_fact_sales_ingestion
-| | └── read-input-data-backup
-│ ├── silver
-│ │ ├── silver_dim_customer
-│ │ ├── silver_dim_product
-│ │ ├── silver_fact_sales
-│ └── gold
-│ └──── gold_sales_enriched
-├── pre-process
-│ └── move_file
-└── temp
+pyspark-etl-template/</br>
+├── config</br>
+│ └── config</br>
+| └── sqlconfig</br>
+├── create_table</br>
+| └── create_table_script</br>
+├── etl</br>
+│ ├── bronze</br>
+│ │ ├── bronze_dim_customer_ingestion</br>
+│ │ ├── bronze_dim_product_ingestion</br>
+│ │ └── bronze_fact_sales_ingestion</br>
+| | └── read-input-data-backup</br>
+│ ├── silver</br>
+│ │ ├── silver_dim_customer</br>
+│ │ ├── silver_dim_product</br>
+│ │ ├── silver_fact_sales</br>
+│ └── gold</br>
+│ └──── gold_sales_enriched</br>
+├── pre-process</br>
+│ └── move_file</br>
+└── temp</br>
 
 **ETL Workflow Diagram**
 ![](etl-workflow-diagram6.png)
