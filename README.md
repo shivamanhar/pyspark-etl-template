@@ -1,10 +1,44 @@
 # PySpark ETL Template Documentation
 
-## Summary
+## Summary 
 
 This project demonstrates a PySpark-based ETL template designed to process data from multiple source systems stored in a data lake such as **Amazon S3** or **Azure Data Lake Gen2**.
 
 All source data is stored in **CSV format**; however, the **delimiter varies across files**. The solution is designed to be **scalable, robust, and extensible, capable** of handling schema consistency issues, data quality challenges, and analytical requirements.
+
+## Solution Architecture
+#### 1. Architecture Overview
+
+I have used Databricks features and created an **end-to-end ETL** pipeline. I have used the medallion architecture **(Bronze, Silver, Gold)** pattern. I have written all code in class and object style, because we can easily achieve scalable, reliable transformations and business-ready analytics for sales data.
+The architecture uses Databricks **Auto Loader, Structured Streaming, Delta Lake, and Unity Catalog**. Using **SCD Type 1** and **SCD Type 2**.
+In this project, <br/>I ensure data quality, reliability, and governance.
+
+**Project folder structure**</br>
+
+pyspark-etl-template/
+├── config
+│ └── config
+| └── sqlconfig
+├── create_table
+| └── create_table_script
+├── etl
+│ ├── bronze
+│ │ ├── bronze_dim_customer_ingestion
+│ │ ├── bronze_dim_product_ingestion
+│ │ └── bronze_fact_sales_ingestion
+| | └── read-input-data-backup
+│ ├── silver
+│ │ ├── silver_dim_customer
+│ │ ├── silver_dim_product
+│ │ ├── silver_fact_sales
+│ └── gold
+│ └──── gold_sales_enriched
+├── pre-process
+│ └── move_file
+└── temp
+
+**ETL Workflow Diagram**
+![](etl-workflow-diagram6.png)
 
 ## Business Requirements
 ### Task 1
