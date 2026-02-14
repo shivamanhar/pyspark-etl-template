@@ -1,6 +1,6 @@
 # PySpark ETL Template Documentation
 
-## Summary
+## Summary 
 
 This project demonstrates a PySpark-based ETL template designed to process data from multiple source systems stored in a data lake such as **Amazon S3** or **Azure Data Lake Gen2**.
 
@@ -14,6 +14,28 @@ The architecture uses Databricks **Auto Loader, Structured Streaming, Delta Lake
 In this project, <br/>I ensure data quality, reliability, and governance.
 
 **Project folder structure**</br>
+
+pyspark-etl-template/
+├── config
+│ └── config
+| └── sqlconfig
+├── create_table
+| └── create_table_script
+├── etl
+│ ├── bronze
+│ │ ├── bronze_dim_customer_ingestion
+│ │ ├── bronze_dim_product_ingestion
+│ │ └── bronze_fact_sales_ingestion
+| | └── read-input-data-backup
+│ ├── silver
+│ │ ├── silver_dim_customer
+│ │ ├── silver_dim_product
+│ │ ├── silver_fact_sales
+│ └── gold
+│ └──── gold_sales_enriched
+├── pre-process
+│ └── move_file
+└── temp
 
 **ETL Workflow Diagram**
 ![](etl-workflow-diagram6.png)
