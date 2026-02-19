@@ -1,0 +1,5 @@
+product_sk,product_key,product_name,category,brand,price,effective_start_date,effective_end_date,is_current
+1,101,Laptop,Electronics,Dell,2000,01-01-2023,31-05-2024,FALSE
+2,102,Headphones,Electronics,Sony,15200.56,01-01-2023,,TRUE
+3,103,Mouse,Accessories,Logitech,9000.2,01-01-2023,,TRUE
+4,101,Laptop,Electronics,HP,10000.5,01-06-2024,,TRUE
